@@ -1,3 +1,4 @@
+
 # Bellabeat Fitbit Case Study
 
 This repository documents an end-to-end data analysis project using public Fitbit data.  
@@ -8,7 +9,7 @@ The goal is to uncover trends in user behavior and generate actionable insights 
 ## 📌 Project Objective
 
 The aim of this case study is to analyze trends in the use of non-Bellabeat smart devices (such as Fitbit) in order to gain insights into user behavior and preferences.  
-These insights will be used to:
+These insights were used to:
 
 - Enhance Bellabeat’s product features  
 - Personalize the user experience  
@@ -16,132 +17,114 @@ These insights will be used to:
 
 ---
 
-## 📁 Folder Structure
+## 📁 Project File Structure
+
+This repository includes the **core notebooks and presentations only**.  
+To keep the repo lightweight, all large datasets and intermediate folders are hosted externally (see Drive link below).
 
 ```
 bellabeat-fitbit-case-study/
 │
-├── raw_data/
-│   └── mturkfitbit_export_3.12.16-5.12.16/
-│       Original CSV exports from two periods (Mar–May 2016)
-│
 ├── bellabeat_preparing/
-│   ├── preparing.ipynb
-│   ├── appended_data/
-│   ├── after_convert/
-│   └── final_preparing_data/
-│       Merged and transformed datasets ready for processing
+│   └── preparing.ipynb
 │
 ├── bellabeat_processing/
-│   ├── processing.ipynb
-│   ├── data_after_standardization_and_type_change/
-│   ├── data_after_removing_nulls_and_duplicates/
-│   ├── data_after_removing_outliers/
-│   ├── final_prepared_data/
-│   └── validation_scripts/
-│       Helper scripts to verify cleaning results
+│   └── processing.ipynb
 │
 ├── bellabeat_analysis/
-│   ├── analysis.ipynb
-│   └── final_prepared_data/
-│       Datasets used for charts and trend exploration
+│   └── analysing.ipynb
 │
 ├── presentations/
-│   ├── bellabeat_case_study.pptx
-│   └── bellabeat_stakeholder.pptx
-│       PowerPoint summaries for technical and executive audiences
+│   ├── Bellabeat Case Study.pptx
+│   └── Bellabeat Stakeholder.pptx
 │
 └── README.md
 ```
+
+📂 For all data files, intermediate folders, and cleaning steps, access the full project files on Google Drive:  
+➡️ [Google Drive – Full Data & Project Structure](https://drive.google.com/drive/folders/17b1w0YfQfEh5DNPYm_6umOAU4d-WnfGz?usp=sharing)
 
 ---
 
 ## 🔄 Project Workflow
 
 ### 1. Preparing Phase
-- Combined datasets with the same schema
+- Merged datasets with same structure
 - Transformed wide-to-long format for time-based data
-- Created clean, unified CSVs for further processing
+- Output: clean, unified CSVs
 
 ### 2. Processing Phase
-- Converted dates and types
-- Removed duplicate and null values
-- Eliminated outliers (e.g., >50,000 steps/day, unrealistic weight)
-- Validated each step to ensure clean, reliable data
+- Fixed date/time and data types
+- Removed nulls, duplicates, and outliers
+- Validated the final datasets for analysis
 
 ### 3. Analysis Phase
-- Performed Exploratory Data Analysis (EDA)
-- Analyzed:
-  - Activity levels by hour and day
-  - Calories burned, steps taken, and sleep quality
-  - Manual vs. automatic logging habits
-- Generated graphs and dashboards
+- Explored trends in:
+  - Calories burned
+  - Steps
+  - Sleep
+  - Manual vs. automatic logs
+- Identified usage patterns over hours/days
 
 ### 4. Share Phase
-- Created two presentations:
-  - `bellabeat_case_study.pptx`: full methodology and insights
-  - `bellabeat_stakeholder.pptx`: key findings for business impact
+- Two PowerPoint presentations created:
+  - Full case documentation
+  - Stakeholder-ready summary
 
 ---
 
-## 🎯 Key Insights & Outcomes
+## 🎯 Key Insights
 
-- **Peak Activity Time**: Users are most active between 3–7 PM
-- **Preferred Intensity**: Light-intensity activity (like walking) dominates
-- **Manual Logging**: 64.8% still log weight manually – automation is underused
-- **BMI Profile**: Average BMI is 24.81 (upper-normal range) – opportunity for weight-tracking features
-- **Weekend Drop-off**: Sunday and late evenings show lowest engagement
+- **Peak Activity**: 3–7 PM on weekdays
+- **Light Activity** dominates user behavior
+- **Manual Logs**: 64.8% log weight manually
+- **Average BMI**: 24.81 — slightly high → opportunity for weight tracking
+- **Engagement drops**: Weekends and evenings
 
 ---
 
-## ✅ How to Reproduce the Project
+## ✅ How to Reproduce
 
-### 1. Clone the Repository
+### 1. Clone the Repo
 ```bash
 git clone https://github.com/yourusername/bellabeat-fitbit-case-study.git
 cd bellabeat-fitbit-case-study
 ```
 
-### 2. Run the Preparation Notebook
-```bash
-Open bellabeat_preparing/preparing.ipynb
-```
+### 2. Run Jupyter Notebooks
+- `bellabeat_preparing/preparing.ipynb`
+- `bellabeat_processing/processing.ipynb`
+- `bellabeat_analysis/analysing.ipynb`
 
-### 3. Run the Processing Notebook
-```bash
-Open bellabeat_processing/processing.ipynb
-```
-
-### 4. Explore the Analysis
-```bash
-Open bellabeat_analysis/analysis.ipynb
-```
-
-### 5. View the Presentations
-```bash
-Open presentations/bellabeat_case_study.pptx or bellabeat_stakeholder.pptx
-```
+### 3. View Presentations
+- `presentations/Bellabeat Case Study.pptx`
+- `presentations/Bellabeat Stakeholder.pptx`
 
 ---
 
 ## 📈 Project Goal Summary
 
-This project aims to translate raw smart device data into meaningful insights by:
+Transform raw wearable device data into business-relevant insights:
 
-- Identifying real user habits
-- Informing product design
-- Driving Bellabeat’s marketing decisions with data
+- Understand real user behavior  
+- Inform product feature design  
+- Support data-backed marketing strategies  
 
 ---
 
-## 🚀 Future Enhancements
+## 📂 Access All Files
 
-- Integrate demographic/external sources for deeper segmentation
-- Build interactive dashboards using Power BI or Tableau
-- Publish case findings in a portfolio or blog
+Full data files, intermediate outputs, and validation folders are available here:  
+➡️ [Google Drive – Full Project Files](https://drive.google.com/drive/folders/17b1w0YfQfEh5DNPYm_6umOAU4d-WnfGz?usp=sharing)
+
+---
+
+## 🚀 Next Steps
+
+- Build interactive dashboards (Power BI / Tableau)  
 
 ---
 
 ## 💬 Contact
 
-For questions or collaboration, feel free to reach out or fork this repository and build upon it!
+Feel free to reach out or fork the repo for further exploration.
